@@ -1,0 +1,9 @@
+<mat-list role="list">
+    <div  *ngFor="let option of sideNavContent">
+        <mat-list-item role="listitem"
+        routerLink="/{{option.link}}" routerLinkActive="active">
+{{option.title | titlecase}}
+<hr>
+</mat-list-item>
+    </div>
+</mat-list>
